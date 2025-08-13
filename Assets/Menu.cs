@@ -1,8 +1,9 @@
+using Code.Audio;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using DG.Tweening;
 using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class Menu : MonoBehaviour
     }
     public void Siguiente()
     {
+        AudioManager.PlayAudio(AudioID.Click, this);
         StartCoroutine(Sig());
     }
     public void Reinicio()
