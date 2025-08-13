@@ -337,6 +337,7 @@ MonoBehaviour:
   - {fileID: 781176270}
   - {fileID: 781176269}
   teclas: {fileID: 1835522651}
+  pixel: 0
   vida: 3
   moneda: 000000000000000000000000
   g: {fileID: 11400000, guid: c6539e8194a5f7a47b8bef7eeb546c76, type: 2}
@@ -9294,6 +9295,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bea25eac3367f4488d00aedd0faa09f, type: 3}
+--- !u!1 &1344399474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344399476}
+  - component: {fileID: 1344399475}
+  m_Layer: 0
+  m_Name: MusicController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1344399475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344399474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851df248182135647b95e16abf21319a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicToPlay: 16
+  fadeInDuration: 0.5
+  stopOnExit: 0
+  musicVolume: 30
+--- !u!4 &1344399476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344399474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4417733, y: 2.350798, z: -0.04221003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1429646424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4820599448333142989, guid: 1bea25eac3367f4488d00aedd0faa09f, type: 3}
@@ -27997,7 +28046,7 @@ SpriteRenderer:
   m_Size: {x: 3.9, y: 3.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1835522653
@@ -30070,3 +30119,4 @@ SceneRoots:
   - {fileID: 626019273}
   - {fileID: 722815282}
   - {fileID: 781176268}
+  - {fileID: 1344399476}

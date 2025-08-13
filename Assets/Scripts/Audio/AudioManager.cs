@@ -27,6 +27,8 @@ namespace Code.Audio
         private static bool PreferencesApplied = false;
         private const int MaxSfxAudioSources = 20; // for each Obj!
 
+        public static AudioID CurrentMusic { get; set; }
+
         static AudioManager()
         {
             InitAudioMixers();
