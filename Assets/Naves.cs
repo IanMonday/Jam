@@ -17,14 +17,20 @@ public class Naves : MonoBehaviour
     [SerializeField] int lista;
     [SerializeField] float distancia;
     [SerializeField] JugadorNave jN;
+    [SerializeField] Collider2D col;
     const string l = "Lava";
     private float velOrg;
+    private void OnEnable()
+    {
+        col = GetComponent<Collider2D>();
+        col.enabled = true;
+    }
     void Start()
     {
         lista = -1;
         velOrg = vel;
         jN=FindObjectOfType<JugadorNave>();
-        arm = FindObjectOfType<ArmaEnemigo>();
+        arm = FindObjectOfType<ArmaEnemigo>();  
     }
 
     // Update is called once per frame
@@ -68,6 +74,7 @@ public class Naves : MonoBehaviour
     }
     IEnumerator estalla()
     {
+        col.enabled = false;
         an.SetTrigger("Boom");
         AudioManager.PlayAudio(AudioID.ExplosionEnemiga, this);
         yield return new WaitForSeconds(0.5f);

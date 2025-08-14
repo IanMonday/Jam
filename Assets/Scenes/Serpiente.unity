@@ -7492,8 +7492,8 @@ MonoBehaviour:
   randomizarY: 1
   minX: -8
   maxX: 9
-  minY: -5
-  maxY: 2
+  minY: -4
+  maxY: 4
   maximo: 3
 --- !u!4 &1568208012
 Transform:

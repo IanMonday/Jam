@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3402b90ef841957478f8f80674959c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: 1
+  vel: 0.35
   distancia: 0.25
   c: {fileID: 0}

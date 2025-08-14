@@ -214,6 +214,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &671802318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5651262260577189123, guid: 22353ab911a59a94fb4bea17426044b6, type: 3}
+  m_PrefabInstance: {fileID: 2215518285456828887}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1157892221
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +381,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2042259925278948548, guid: 22353ab911a59a94fb4bea17426044b6, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2065548751501056308, guid: 22353ab911a59a94fb4bea17426044b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 671802318}
+    - target: {fileID: 2065548751501056308, guid: 22353ab911a59a94fb4bea17426044b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2701973535950394117, guid: 22353ab911a59a94fb4bea17426044b6, type: 3}

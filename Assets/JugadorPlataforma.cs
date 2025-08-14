@@ -36,6 +36,7 @@ public class JugadorPlataforma : MonoBehaviour
     [SerializeField] float desaceleracion;
     private float gravedadOrg;
     private float dir;
+    private float f;
     [SerializeField] float fuerzaGravedad;
     [SerializeField] float velGravedad;
     [SerializeField] float disDet;
@@ -58,7 +59,7 @@ public class JugadorPlataforma : MonoBehaviour
             g.teclas = false;
         }
         g.teclas = false;
-        if (transicion == g.transicion) cam.transform.DOMove(new Vector3(Mathf.Clamp(transform.position.x, -3, 27), Mathf.Clamp(transform.position.y, 0, 70), cam.position.z), 8)
+        if (transicion == g.transicion) cam.transform.DOMove(new Vector3(Mathf.Clamp(transform.position.x, -3, 27), Mathf.Clamp(transform.position.y, 0, 36), cam.position.z), 8)
                 .SetEase(Ease.Linear).SetDelay(1).OnComplete(Transc);
         else
         {
@@ -85,14 +86,16 @@ public class JugadorPlataforma : MonoBehaviour
         {
             if (Vector3.Distance(bases.position, transform.position) > 1) bases.position = transform.position;
             else bases.position = Vector3.Lerp(bases.position, transform.position, 3 * Time.deltaTime);
-        }           
-        if(Input.GetKeyDown(KeyCode.Space)&&contacto)
+        }
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             Salto();
         }
-        float f = transform.position.y < 0 ? 0 : transform.position.y;
-        if (Input.GetKey(KeyCode.W)) altura = f + 5;
-        else if (Input.GetKey(KeyCode.S)) altura = f - 5;
+        if (transform.position.y < 0) f = 0;
+        else if (transform.position.y > 36) f = 36;
+        else f = transform.position.y;
+        if (Input.GetKey(KeyCode.W)) altura = f + 10;
+        else if (Input.GetKey(KeyCode.S)) altura = f - 10;
         else altura = transform.position.y;
         an.SetBool("Salto", !contacto);
         if (inmune > 0) inmune -= Time.deltaTime;
@@ -100,7 +103,7 @@ public class JugadorPlataforma : MonoBehaviour
     private void FixedUpdate()
     {
         Gravedad();
-        Vector3 rota = new Vector3(Mathf.Clamp(transform.position.x,-3,27), Mathf.Clamp(altura,0, 70), cam.position.z);
+        Vector3 rota = new Vector3(Mathf.Clamp(transform.position.x,-3,27), Mathf.Clamp(altura,0, 36), cam.position.z);
         if(!transicion)cam.position = Vector3.Lerp(cam.position, rota, velCamara * Time.fixedDeltaTime);
         float x = Input.GetAxisRaw("Horizontal");
         Vector2 dr = new Vector2(x, 0);

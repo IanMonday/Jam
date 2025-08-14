@@ -1409,10 +1409,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799757674558031982}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Siguiente
-        m_Mode: 1
+      - m_Target: {fileID: 6088315264317242138}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5651262260577189123}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1437,6 +1449,7 @@ MonoBehaviour:
   i: {fileID: 0}
   org: {fileID: 21300000, guid: 55df8f94898a9cc4ba00a462f58bbf72, type: 3}
   dif: {fileID: 21300000, guid: 007765f4b8a803f43a9dc51d803a3bc6, type: 3}
+  orgTexto: Jugar
   intercambio: Opciones
 --- !u!61 &4131456285415817946
 BoxCollider2D:
@@ -2995,7 +3008,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 799757674558031982}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Salir
+        m_MethodName: Siguiente
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3021,6 +3034,7 @@ MonoBehaviour:
   i: {fileID: 0}
   org: {fileID: 21300000, guid: 55df8f94898a9cc4ba00a462f58bbf72, type: 3}
   dif: {fileID: 21300000, guid: 007765f4b8a803f43a9dc51d803a3bc6, type: 3}
+  orgTexto: Creditos
   intercambio: Jugar
 --- !u!61 &758809953963635620
 BoxCollider2D:
@@ -3901,31 +3915,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1316577932238869082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6088315264317242138}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 5651262260577189123}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &8566308458723056940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3942,6 +3932,7 @@ MonoBehaviour:
   i: {fileID: 0}
   org: {fileID: 21300000, guid: 55df8f94898a9cc4ba00a462f58bbf72, type: 3}
   dif: {fileID: 21300000, guid: 007765f4b8a803f43a9dc51d803a3bc6, type: 3}
+  orgTexto: Opciones
   intercambio: Creditos
 --- !u!61 &6959532843201326688
 BoxCollider2D:

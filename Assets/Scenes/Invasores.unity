@@ -384,7 +384,7 @@ MonoBehaviour:
   t: {fileID: 1459673384}
   pasivo: 0
   puntos: 0
-  maxPuntos: 25
+  maxPuntos: 15
   vida: 3
   jugador: {fileID: 933016945}
   corazones:
@@ -909,6 +909,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35
       objectReference: {fileID: 0}
+    - target: {fileID: 5511069945094138015, guid: 4426759dd28262244b60021694267c82, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1507786449}
     - target: {fileID: 6087542757644287077, guid: 4426759dd28262244b60021694267c82, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

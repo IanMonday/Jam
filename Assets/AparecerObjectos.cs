@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using DG.Tweening;
 public class AparecerObjectos : MonoBehaviour
 {
     [SerializeField] List<GameObject> objectos;
@@ -50,6 +50,7 @@ public class AparecerObjectos : MonoBehaviour
             if (!objectos[x].activeSelf)
             {
                 objectos[x].SetActive(true);
+                objectos[x].transform.DOScale(new Vector2(objectos[x].transform.localScale.x +0.25f, objectos[x].transform.localScale.y+0.25f), 0.25f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.InQuad);
                 return objectos[x];
             }
         }

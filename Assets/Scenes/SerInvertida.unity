@@ -5863,14 +5863,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectos: []
   referencia:
-  - {fileID: 1984400332}
-  - {fileID: 1984400332}
+  - {fileID: 3338672027088909743, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
+  - {fileID: 3338672027088909743, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
   frecuencia: 3
   randomizarY: 1
   minX: -8
   maxX: 9
-  minY: -5
-  maxY: 2
+  minY: -4
+  maxY: 4
   maximo: 5
 --- !u!4 &1568208012
 Transform:
@@ -5887,76 +5887,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1984400331
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 906544679470364391, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3338672027088909743, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_Name
-      value: ManzaAtaca
-      objectReference: {fileID: 0}
-    - target: {fileID: 3338672027088909743, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344865373218676130, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 193023522, guid: 06c5cba28f4a88b4da5a22a1598698fa, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
---- !u!1 &1984400332 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3338672027088909743, guid: 429921fa91a48e64b8dc9bf2c50c09b2, type: 3}
-  m_PrefabInstance: {fileID: 1984400331}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2134377578
 GameObject:
   m_ObjectHideFlags: 0
@@ -7588,7 +7518,6 @@ SceneRoots:
   - {fileID: 430447435}
   - {fileID: 1568208012}
   - {fileID: 27886373}
-  - {fileID: 1984400331}
   - {fileID: 844415989}
   - {fileID: 2090062795707985712}
   - {fileID: 417544818}

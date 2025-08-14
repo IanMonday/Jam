@@ -11,13 +11,14 @@ public class interfaz : MonoBehaviour
     [SerializeField] Image i;
     [SerializeField] Sprite org;
     [SerializeField] Sprite dif;
-    private string orgTexto;
-    [SerializeField] string intercambio; 
-    private void Start()
+    [SerializeField] string orgTexto;
+    [SerializeField] string intercambio;
+    private void OnEnable()
     {
-        t=GetComponentInChildren<TextMeshProUGUI>();
-        i=GetComponent<Image>();
-        orgTexto = t.text;
+        if(t==null) t = GetComponentInChildren<TextMeshProUGUI>();
+        if (i==null) i = GetComponent<Image>();
+        t.text = orgTexto;
+        i.sprite = org;
     }
     private void OnMouseEnter()
     {
