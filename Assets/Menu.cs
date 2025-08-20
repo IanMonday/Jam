@@ -13,9 +13,10 @@ public class Menu : MonoBehaviour
     float org;
     private void Awake()
     {
-        if(fadeInicio)
+        Time.timeScale = 1;
+        if (fadeInicio)
         {
-            Color a=panel.color;
+            Color a = panel.color;
             a.a = 1;
             panel.color = a;
             panel.DOFade(0, 0.5f).SetDelay(0.5f);
@@ -42,6 +43,19 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Pausa()
+    {
+        Time.timeScale = 0;
+    }
+    public void Reanudar()
+    {
+        Time.timeScale = 1;
+    }
+    public void Volver()
+    {
+      SceneManager.LoadScene(0);
+    }
+
     IEnumerator Sig()
     {
         if (fadeFinal) panel.DOFade(1, 0.75f);
@@ -51,7 +65,7 @@ public class Menu : MonoBehaviour
 
     IEnumerator Reini()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -87,7 +87,7 @@ public class JugadorPlataforma : MonoBehaviour
             if (Vector3.Distance(bases.position, transform.position) > 1) bases.position = transform.position;
             else bases.position = Vector3.Lerp(bases.position, transform.position, 3 * Time.deltaTime);
         }
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space)&&contacto)
         {
             Salto();
         }

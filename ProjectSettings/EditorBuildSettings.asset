@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: 0fcf4a44ab0edc6459a70aeee1c8ca06
   - enabled: 1
+    path: Assets/Scenes/CineInicio.unity
+    guid: 28defa09fd606e345848a05f6cb1558d
+  - enabled: 1
     path: Assets/Scenes/Plataforma.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 0864c42346202264e89f5b1bfe38b4cb
   - enabled: 1
     path: Assets/Scenes/FormaInvertida.unity
     guid: cc55738d66ecdcd47bd4fdc75bfff151
